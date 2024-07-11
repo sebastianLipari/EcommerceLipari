@@ -1,0 +1,76 @@
+html, body {
+    height: 100%; 
+    margin: 0;   
+    padding: 0;  
+    background-color: rgb(0, 0, 0); 
+}
+
+#root {
+    background-color: rgb(113, 114, 116); 
+    height: 100%;  
+    width: 50%;   
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.NavContainer{
+
+    background-color: rgb(30, 25, 85);
+    height: auto;
+    padding: 10px;
+}   
+
+.NavSection{
+    
+    width: 100%;
+    background-color: rgb(30, 25, 85);
+
+}
+
+.nav-underline{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartWidgetContainer{
+
+    background-color: rgb(30, 25, 85);
+    width: 35%;
+    text-align: end;
+    position: relative;
+}
+
+.imgCart{
+
+    height:30px;
+    margin-top: 10px;
+    width: 35px;
+}
+
+span{
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 2px;
+    border-radius: 170px;
+
+}
+
+.nav-link{
+
+    color: aliceblue;
+
+}
+
+.contenedor-greeting{
+
+    text-align: center;
+    margin-top: 25%;
+  
+    color: aliceblue;
+    
+}
+
+
