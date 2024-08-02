@@ -1,0 +1,33 @@
+[
+
+  {
+    "imagen": "https://via.placeholder.com/150x150  ",
+    "marca": "HTC",
+    "gama": "media",
+    "id": 1
+  },
+  {
+    "imagen": "https://via.placeholder.com/150x150  ",
+    "marca": "Sagem",
+    "gama": "alta",
+    "id": 2
+  },
+  {
+    "imagen": "https://via.placeholder.com/150x150  ",
+    "marca": "Nokia",
+    "gama": "media",
+    "id": 3
+  },
+  {
+    "imagen": "https://via.placeholder.com/150x150 ",
+    "marca": "Amazon",
+    "gama": "media",
+    "id": 4
+  },
+  {
+    "imagen": "https://via.placeholder.com/150x150  ",
+    "marca": "BLU",
+    "gama": "alta",
+    "id": 5
+  }
+]

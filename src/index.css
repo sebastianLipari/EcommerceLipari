@@ -7,10 +7,11 @@ html, body {
 
 #root {
     background-color: rgb(113, 114, 116); 
-    height: 100%;  
-    width: 50%;   
+    height: auto;  
+    width: 100%;   
     margin-left: auto; 
     margin-right: auto; 
+    
 }
 
 .NavContainer{
@@ -64,13 +65,47 @@ span{
 
 }
 
-.contenedor-greeting{
+.ItemListContainer{
 
-    text-align: center;
-    margin-top: 25%;
-  
-    color: aliceblue;
-    
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(220, 245, 226);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0px, 90px;
 }
+
+
+.CardContainer{
+    background-color: aqua;
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card {
+    width: 200px; /* Define un ancho fijo para las tarjetas */
+    height: auto;
+    margin: 10px; /* Añade un margen para separarlas un poco */
+    border: 1px solid #ccc; /* Opcional: añade un borde */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    overflow: hidden; /* Para asegurarte de que el contenido no se desborde */
+    text-align: center; /* Para centrar el contenido dentro de la tarjeta */
+}
+
+.card img {
+    height: 150px; /* Define una altura fija para las imágenes */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsión */
+}
+
+
+
+
 
 
