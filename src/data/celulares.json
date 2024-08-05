@@ -1,33 +1,33 @@
 [
 
   {
-    "imagen": "https://via.placeholder.com/150x150  ",
+    "imagen": "https://www.unidiversidad.com.ar/cache/redmi-note-11-pro_1000_1100.jpg",
     "marca": "HTC",
-    "gama": "media",
+    "category": "gama-media",
     "id": 1
   },
   {
-    "imagen": "https://via.placeholder.com/150x150  ",
+    "imagen": "https://www.unidiversidad.com.ar/cache/redmi-note-11-pro_1000_1100.jpg",
     "marca": "Sagem",
-    "gama": "alta",
+    "category": "gama-media",
     "id": 2
   },
   {
-    "imagen": "https://via.placeholder.com/150x150  ",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/CNB7S5DNSSRIEYJ6QN645ZXDPE.jpg?auth=c2359d7de00415747fdf26cdf1736616c115dff097ef945f5aba68b500738060&width=1200",
     "marca": "Nokia",
-    "gama": "media",
+    "category": "gama-alta",
     "id": 3
   },
   {
-    "imagen": "https://via.placeholder.com/150x150 ",
+    "imagen": "https://imagenes.elpais.com/resizer/v2/CNB7S5DNSSRIEYJ6QN645ZXDPE.jpg?auth=c2359d7de00415747fdf26cdf1736616c115dff097ef945f5aba68b500738060&width=1200",
     "marca": "Amazon",
-    "gama": "media",
+    "category": "gama-alta",
     "id": 4
   },
   {
-    "imagen": "https://via.placeholder.com/150x150  ",
+    "imagen": "https://www.unidiversidad.com.ar/cache/redmi-note-11-pro_1000_1100.jpg",
     "marca": "BLU",
-    "gama": "alta",
+    "category": "gama-media",
     "id": 5
   }
 ]

@@ -78,7 +78,7 @@ span{
 
 
 .CardContainer{
-    background-color: aqua;
+    background-color: rgb(40, 33, 66);
     width:80%;
     height: 100%;
     display: flex;
@@ -89,19 +89,19 @@ span{
 }
 
 .card {
-    width: 200px; /* Define un ancho fijo para las tarjetas */
+    width: 200px; 
     height: auto;
-    margin: 10px; /* Añade un margen para separarlas un poco */
-    border: 1px solid #ccc; /* Opcional: añade un borde */
-    border-radius: 5px; /* Opcional: añade bordes redondeados */
-    overflow: hidden; /* Para asegurarte de que el contenido no se desborde */
-    text-align: center; /* Para centrar el contenido dentro de la tarjeta */
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    overflow: hidden; 
+    text-align: center; 
 }
 
 .card img {
-    height: 150px; /* Define una altura fija para las imágenes */
-    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
-    object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsión */
+    height: 150px;
+    width: 100%; 
+    object-fit: cover; 
 }
 
 
