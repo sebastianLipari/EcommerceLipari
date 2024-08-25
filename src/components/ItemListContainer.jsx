@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import data from "../data/celulares.json";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { collection, getDocs,query,where } from "firebase/firestore";
+import { db } from "../main";
 
 export const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
@@ -9,27 +10,27 @@ export const ItemListContainer = () => {
   const { categoryId } = useParams();
 
   useEffect(() => {
-    new Promise((resolve, reject) => {
-      setTimeout(() => resolve(data), 2000);
-    })
-      .then((response) => {
-        setProductos(response);
-
-        if (!categoryId) {
-          setProductos(response);
-        } else {
-          const filtrado = response.filter((prod) => prod.category === categoryId);
-          setProductos(filtrado);
-        }
+  
+    const productosRef = collection(db, "items");
+    const q = categoryId ? query(productosRef,where("categoryId", "==",categoryId)): productosRef;
+   
+    getDocs(q)
+      .then((snapshot) => {
+        setProductos(
+          snapshot.docs.map((doc) => {
+            return { ...doc.data(), id: doc.id };
+          })
+        );
+        setLoading(false); // <- Aquí se desactiva el estado de carga
       })
-      .then(() => setLoading(false));
   }, [categoryId]);
+  
 
   if (loading)
     return (
       <div className="ItemListContainer">
         <div className="CardContainer">
-          <h2>Loading...</h2>
+          <h2 style={{ color: "white" }}>Cargando...</h2>
         </div>
       </div>
     );
@@ -39,9 +40,12 @@ export const ItemListContainer = () => {
       <div className="CardContainer">
         {productos.map((producto) => (
           <div className="card" key={producto.id}>
-            <img src={producto.imagen} alt={producto.marca} />
-            <h2>{producto.marca}</h2>
-            <p>{producto.category}</p>
+            <img src={producto.imageId} alt={producto.marca} />
+            <h2>{producto.title}</h2>
+            <p>{producto.categoryId}</p>
+            <p>${producto.price}</p>
+            <p>{producto.stock}</p>
+
             <Link to={`/item/${producto.id}`}>
               <button>Ver</button>
             </Link>
